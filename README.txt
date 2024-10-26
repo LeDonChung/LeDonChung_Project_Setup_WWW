@@ -53,6 +53,11 @@
 </Context>
 
 
+//Fix lỗi duplicate
+war {
+  duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
   compileOnly('jakarta.servlet:jakarta.servlet-api:6.0.0')
   implementation 'org.jboss.weld.servlet:weld-servlet-core:5.1.1.Final'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
@@ -64,6 +69,9 @@
 
   // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
   implementation 'org.mariadb.jdbc:mariadb-java-client:3.4.1'
+
+// https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
+  implementation 'org.hibernate.orm:hibernate-core:6.6.0.Final'
 
   // JSP
   implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.0'
@@ -86,5 +94,4 @@
 </body>
 </html>
 
-  // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
-  implementation 'org.hibernate.orm:hibernate-core:6.6.0.Final'
+  
