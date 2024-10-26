@@ -65,6 +65,11 @@
   // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
   implementation 'org.mariadb.jdbc:mariadb-java-client:3.4.1'
 
+  // JSP
+  implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.0'
+  implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0'
+
+
 
 <%@ page language="java" contentType="text/html;charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8" %>
 
@@ -80,9 +85,6 @@
 <body>
 </body>
 </html>
-  // JSP
-  implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.0'
-  implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0'
 
   // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
   implementation 'org.hibernate.orm:hibernate-core:6.6.0.Final'
